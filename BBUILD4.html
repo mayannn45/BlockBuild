@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+       
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background-color: #0000;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00000;
+            text-decoration: none;
+        }
+        .service, .form-section {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .service button, .back-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .service button:hover, .back-button:hover {
+            background: #2980b9;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .form-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 32px;">Welcome to Block Build</h1>
+        <p style="font-size: 14px;">Your trusted source for quality civil engineering contract services.</p>
+        <img src="https://www.thomasandhutton.com/wp-content/uploads/2023/05/Gorodenkoff-construction-1-2048x1152.jpg" alt="Civil Engineering Banner">
+    </header>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Videos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        video, iframe {
+            width: 30%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            video, iframe {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- YouTube Video 1 -->
+<iframe src="https://www.youtube.com/embed/m9coOXt5nuw?autoplay=1&loop=1&playlist=m9coOXt5nuw" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+
+<!-- YouTube Video 2 -->
+<iframe src="https://www.youtube.com/embed/kpHBxLqkikw?autoplay=1&loop=1&playlist=kpHBxLqkikw" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+
+<!-- YouTube Video 3 -->
+<iframe src="https://www.youtube.com/embed/onW7fhueVss?autoplay=1&loop=1&playlist=onW7fhueVss" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+
+</body>
+
+    <section id="services">
+        <h2 style="font-size: 26px;">Our Services</h2>
+        <div class="service">
+            <h3 style="font-size: 20px;">Contract Generation</h3>
+            <img src="https://counselforcreators.com/wp-content/uploads/2019/07/AdobeStock_67425246.jpeg" alt="Contract Generation">
+            <p>We provide automated and customized contract generation for civil engineering projects.</p>
+            <button onclick="showForm('contractForm')">PROCEED</button>
+        </div>
+        <div class="service">
+            <h3 style="font-size: 20px;">Legal Document Review</h3>
+            <img src="https://www.cflowapps.com/wp-content/uploads/2023/04/documnt_reviewprocess.jpg" alt="Legal Document Review">
+            <p>Ensure your civil engineering contracts and agreements are legally sound.</p>
+            <button onclick="showForm('reviewForm')">PROCEED</button>
+        </div>
+    </section>
+    
+    <section id="contractForm" class="form-section">
+        </head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Agreement</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+
+        <style>
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .signature div {
+            text-align: center;
+            width: 45%;
+            border-top: 2px solid black;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+       </style>
+       </head>
+       <body>
+    <div class="container">
+        <h2>CONTRACT GENERATING FORM</h2>
+        <h3>Form of Contract Agreement</h3>
+        
+        <form id="contractForm">
+            <div class="form-group">
+                <label>Contract ID:##XX#### </label>
+                <input type="text" id="contract_id" required>
+            </div>
+            <div class="form-group">
+                <label>Contract Name:</label>
+                <input type="text" id="contract_name" required>
+            </div>
+            <div class="form-group">
+                <label>Location of Contract:</label>
+                <input type="text" id="contract_location" required>
+            </div>
+            <div class="form-group">
+                <label>Date of Contract Agreement:</label>
+                <input type="text" id="date_making" required placeholder="e.g., 3rd day of November, 2017" required>
+            </div>
+            <div class="form-group">
+                <label>Party A (Client):</label>
+                <input type="text" id="party_a" required>
+            </div>
+             <div class="form-group">
+                <label>Party A (Address):</label>
+                <input type="text" id="a_address" required>
+            </div>
+            <div class="form-group">
+                <label>Party B (Contractor):</label>
+                <input type="text" id="party_b" required>
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" id="b_address" required>
+            </div>
+            <div class="form-group">
+                <label>Contract Price:</label>
+                <input type="text" id="contract_price" required placeholder="e.g., One Million Pesos & Fifty Centavos (P1,000,000.50)" required>
+            </div>
+            <button type="button" onclick="generatePDF()">Download Contract as PDF</button>
+        </form>
+
+        <h2>Acknowledgement</h2>
+        <p style="text-align: justify; font-size: 14px;">BEFORE ME, personally appeared the authorized representatives, known to be the same persons who executed the foregoing CONTRACT AGREEMENT and acknowledged to me that it is true and correct.</p>
+        
+        <div class="signature">
+            <div>
+                <p>Procurement Entity</p>
+                <canvas id="signature1"></canvas>
+            </div>
+            <div>
+                <p>Contractor</p>
+                <canvas id="signature2"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({ margin: 20 });
+
+            doc.setFontSize(12.5);
+            doc.text("FORM OF CONTRACT AGREEMENT", 70, 20);
+            doc.setFontSize(11);
+            doc.text("KNOW ALL MEN BY THESE PRESENTS:", 20, 30);
+            doc.text(`This CONTRACT AGREEMENT, made this ${document.getElementById('date_making').value} by, and between:`, 20, 40);
+           
+            doc.text(`The client,  ${document.getElementById('party_a').value}  duly authorized for this purpose, located at`, 30,50) 
+            doc.text(`${document.getElementById('a_address').value}, hereinafter referred to as the"PROCURING ENTITY"; `, 30,55);
+
+
+          
+            doc.text ('- and - ', 90,65)
+
+
+
+            doc.text("A single proprietor/partnership/corporation joint venture organized and existing under and by", 30,75)
+            doc.text (`virtue of laws of the Republic of the Philippines, whose office address is located at`, 30,80)  
+            doc.text (`${document.getElementById('b_address').value}, represented herein by ${document.getElementById('party_b').value},`, 30,85)
+             doc.text (`duly authorized for this purpose, hereinafter referred to as the "CONTRACTOR";`, 30,90)
+            
+
+            doc.text ('WITNESSETH: ', 20,100)
+
+
+            doc.text ('WHEREAS, the PROCURING ENTITY is desirous that the CONTRACTOR execute the Works', 20,110)
+            doc.text (`under ${document.getElementById('contract_id').value} -`, 20,115)
+            doc.text (` ${document.getElementById('contract_name').value}, ${document.getElementById('contract_location').value}`, 20,120)
+            doc.text ('hereinafter called "the WORKS and the PROCURING ENTITY has accepted"', 20,125)
+            doc.text (`the Calculated Bid of the CONTRACTOR for the execution and completion of the Works `,20,130)
+            doc.text (`at the calculated unit bid prices shown in the attached Bill of Quantities, or a`, 20,135)
+            doc.text (`total of Contract price of ${document.getElementById('contract_price').value}`, 20,140)
+
+            doc.text (` NOW, THEREFORE, for and consideration of the foregoing premises, the parties hereto`, 20,150)
+            doc.text (` agree as follows:`, 20,155)
+            
+            doc.text (` 1.  In this CONTRACT AGREEMENT, words and expressions shall have the same`, 20,165)
+            doc.text (`     meanings as are respectively assigned to them in the Conditions of Contract herein`,20,170) 
+            doc.text (`     after referred to.`, 20,175)
+            doc.text (` 2.  The following documents shall be attached, deemed to form, and be read and`,20,180)
+            doc.text (`     construed as part of this CONTRACT AGREEMENT, and shall be interpreted in the`, 20,185)
+            doc.text (`     following order of priority:`,20,190)
+            doc.text (`        a) This Contract Agreement`,20,195)
+            doc.text (`        b) Documents forming part of the Contract Agreement:`, 20,200)
+            doc.text (`            1.  Notice of Award (NOA) with the Contractor's signed "conforme"`,20,205)
+            doc.text (`            2.  Contractor's Bid in the Form of Bid, including its Technical and Financial Proposals, as`,20,210)
+            doc.text (`                calculated by the Procuring Entity and conformed to by the Contractor through the NOA.`,20,215)
+            doc.text (`            3.  Bidding Documents with Bulletins`,20,220)
+            doc.text (`            4.  Specifications`,20,225)
+            doc.text (`            5.  Drawings`,20,230)
+             doc.text(`            6.  Special Conditions of Contract (SCC)`,20,235)
+            doc.text (`            7.  General Conditions of Contract (GCC)`,20,240)
+            doc.text (`            8.  Performance Security`,20,245)
+            doc.text (`            9.  Integrity Pledge under Department Order No. 86, series of 2013`,20,250)
+            
+
+            doc.addPage()
+        
+           
+            doc.text (`            10. Other Documents `,20,20)
+            doc.text (`                (1) Construction Methods`,20,25)
+            doc.text (`                (2) Construction Schedule in the form of PERT/CPM Diagram or Precedence Diagram`,20,30)
+            doc.text (`                    and Bar Chaft with S-Curve, or other approved tools of project scheduling, and`, 20,35)
+            doc.text (`                    Cash Flow.`, 20,40)
+            doc.text (`                (3) Manpower Schedule`, 20,45)
+            doc.text (`                (4) Equipment Utilization Schedule`, 20, 50)
+            doc.text (`                (5) Construction Safety and Health Program initially approved by the`, 20, 55)
+            doc.text (`                    Head of the Procuring Entity`, 20,60)
+            doc.text (`                (6) Contractor's All Risk Insurance (CARI)`, 20,65)
+            doc.text (` 3.  In consideration of the payments to be made by the PROCURING ENTITY to the CONTRACTOR`,20,70)
+            doc.text (`     as hereinafter mentioned, the CONTRACTOR hereby covenants with the PROCURING ENTITY to `,20,75)
+            doc.text (`     execute and complete the Work and remedy any defects therein in conformity with the `,20,80)
+            doc.text (`     provisions of this CONTRACT AGREEMENT in all respects.`, 20,85)
+            doc.text (` 4.  In consideration of the execution and completion of the Works by the CONTRACTOR, the`,20,90)
+            doc.text (`     PROCURING ENTITY hereby covenants to pay the CONTRACTOR the unit prices in the`,20,95)
+            doc.text (`     CONTRACTOR's Calculated Bid, as applied to the actual quantities accomplished as certified by`,20,100)
+            doc.text (`     the PROCURING ENTITY under the provisions of this CONTRACT AGREEMENT, at the times and `,20,105)
+            doc.text (`     in the manner prescribed by this CONTRACT AGREEMENT`, 20,110) 
+            
+             
+              
+            doc.text (`IN WITNESS WHEREOF, the parties hereto set their respective hands on the day, month and year first 
+            above written.`, 20,120)
+            doc.text("______________________", 20, 160);
+            doc.text("______________________", 130, 160);
+            doc.text("Procurement Entity", 20, 135);
+            doc.text("Contractor", 130, 135);
+            
+        const canvas1 = document.getElementById('signature1');
+        const canvas2 = document.getElementById('signature2');
+        const signature1 = canvas1.toDataURL('image/png');
+        const signature2 = canvas2.toDataURL('image/png');
+
+        doc.addImage(signature1, 'PNG', 10, 140, 70, 20);
+        doc.addImage(signature2, 'PNG', 110, 140, 70, 20);
+
+       			
+            
+            doc.save("Contract_Agreement.pdf");
+        }
+    
+    function initializeCanvas(id) {
+            const canvas = document.getElementById(id);
+            const ctx = canvas.getContext('2d');
+            let isDrawing = false;
+
+            canvas.addEventListener('mousedown', () => isDrawing = true);
+            canvas.addEventListener('mouseup', () => isDrawing = false);
+            canvas.addEventListener('mousemove', draw);
+
+            function draw(event) {
+                if (!isDrawing) return;
+                ctx.lineWidth = 2;
+                ctx.lineCap = 'round';
+                ctx.strokeStyle = 'black';
+
+                ctx.lineTo(event.offsetX, event.offsetY);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(event.offsetX, event.offsetY);
+            }
+       
+        }
+
+        window.onload = () => {
+            initializeCanvas('signature1');
+            initializeCanvas('signature2');
+        };
+    </script>
+</body>
+
+
+        <button class="back-button" onclick="goBack()">Back</button>
+    </section>
+    <section id="reviewForm" class="form-section">
+        <h2>Legal Document Review Form</h2>
+        <form>
+        <input type="text" placeholder="Document Title" >
+        <input type="file" >
+        <input type="email" placeholder="Email Address" >
+        </form>
+        <button class="back-button" onclick="goBack()">Please Wait on Email</button>
+        
+    <footer>
+        <h1 style="font-size: 50px;">   </h1>
+        <h1 style="font-size: 16px;">Contact Us</h1>
+        <p>Powered by BlockBuild Developers</p>
+        <p>Email: <a href="BlockBuild@busisness.com">BlockBuild@business.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/BlockBuild</a></p>
+    </footer>
+    </section>
+    
+    <script>
+        function showForm(formId) {
+            document.getElementById("services").style.display = "none";
+            document.getElementById(formId).style.display = "block";
+        }
+        
+        function goBack() {
+            document.getElementById("services").style.display = "block";
+            document.getElementById("contractForm").style.display = "none";
+            document.getElementById("reviewForm").style.display = "none";
+        }
+    </script>
+</body>
+ 
+</html>
